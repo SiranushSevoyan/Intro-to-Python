@@ -10,8 +10,10 @@ print ("The day of my birthday: ", birthday.day)
 print('The weekday of my birthday: ', birthday.isoweekday())
 
 nextbirthday = datetime.date(2020, 2, 12)
-print("How many days are left till my upcoming birthday: ", nextbirthday-datetime.date.today())
+print("How many days are left till my upcoming birthday: ", nextbirthday-datetime.date.today(),"\n")
 
-print (calendar.month(2017, 5))
+print (calendar.month(2017, 5)) 
 one_day = datetime.timedelta(days = 1)
 print("Yesterday: ", (datetime.datetime.today()-one_day))
+print("Yesterday + 2 days: ", (datetime.datetime.today()+ one_day))
+print("Yesterday - 3 days: ", (datetime.datetime.today()- 4*one_day))
